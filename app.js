@@ -73,3 +73,22 @@ const menu = [
     },
   ];
   
+  const sectionCenter = document.querySelector('.section-center');
+
+  window.addEventListener('DOMContentLoaded', function(){
+    let displayMenu = menu.map(function(item){
+      // console.log(item);
+      
+      return `<article class="menu-item">
+              <img src="menu-item.jpeg" class="photo" alt="menu item">
+      <div class="item-info">
+          <header>
+            <h4>buttermilk pancakes</h4>
+            <h4 class="price">$15</h4>
+          </header>
+          <p class="item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda libero dolor quibusdam distinctio! Laboriosam eos ex ducimus aliquam unde harum, facere cumque temporibus suscipit tenetur natus? Cumque debitis possimus architecto.</p>
+      </div>
+  </article>`;
+    });
+    console.log(displayMenu);
+  });
